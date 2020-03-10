@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color:red">Removing Duplicates from the Array</h1>
+
+    <script>
+    
+    // removing duplicate elements from the single array
+
+let arr = [1, 2, -2, 4, 5, 4, 7, 8, 7, 7, 71, 3, 6],
+newArr = [],
+set = new Set(arr);
+for (let val of set) {
+newArr.push(val);
+}
+console.log(newArr.sort());
+
+    // comparing two arrays and removing duplicates
+
+var ele=[2,3,4,2,8,6]
+var ele1=[2,7,9,6]
+var unique=[...new Set([...ele,...ele1])]
+console.log(unique.sort())
+
+
+  // concating two arays into a single array using spread operator instead of concat() method
+
+  var x=[6,2,8,1,9]
+  var y=[12,2,8,1,26,15]
+ var z=[...x,...y]
+ console.log(z)
+
+    </script>
+</body>
+</html>
